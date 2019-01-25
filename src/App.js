@@ -5,7 +5,8 @@ import './App.css';
 import {Switch,Route} from 'react-router-dom'
 // component  
 import Navbar from './componnents/Navbar'
-import Cart from './componnents/Cart'
+import Cart from './componnents/Cart/Cart'
+import Modal from './componnents/Modal'
 //import Product from './componnents/Product'
 import ProductList from './componnents/ProductList'
 import Details from './componnents/Details'
@@ -23,7 +24,7 @@ class App extends Component {
          
          <Route component={Default}/>
        </Switch>
-       
+       <Modal/>
       </React.Fragment>
     );
   }
